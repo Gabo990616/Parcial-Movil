@@ -32,10 +32,10 @@ class _ModificarState extends State<Modificar> {
   @override
   void initState() {
     controladorfoto = TextEditingController();
-    controladornombre = TextEditingController();
-    controladorapellido = TextEditingController();
-    controladorprofesion = TextEditingController();
-    controladorfechanac = TextEditingController();
+    controladornombre = TextEditingController(text:personaC.nombre);
+    controladorapellido = TextEditingController(text:personaC.apellido);
+    controladorprofesion = TextEditingController(text:personaC.profesion);
+    controladorfechanac = TextEditingController(text:personaC.fechaNac);
 
     super.initState();
   }
